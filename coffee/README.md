@@ -72,6 +72,18 @@ CREATE TABLE purchase (
 );
 ```
 
+### User Profile Image
 
+To display a user profile image on your website, use the following path for the image:
+
+```
+C:/xampp/htdocs/coffee/image/user.png
+```
+
+In your HTML, reference the image like this:
+
+```html
+<img src="https://github.com/sajjadjim-cse/web-lab/blob/main/coffee/image/purchase.png?raw=true" alt="User Profile" />
+```
 
 This table stores each purchase with the user's email, coffee details, amount, and purchase date.
