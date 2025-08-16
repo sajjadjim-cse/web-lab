@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #4f8cff;
+}
+nav span, nav button {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+nav button {
+    background: #fff;
+    color: #4f8cff;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dashboard-container {
+    margin: 30px auto;
+    padding: 16px;
+    background: #fff;
+    border-radius: 6px;
+    max-width: 500px;
+}
+.dashboard-container h1, .dashboard-container p {
+    text-align: center;
+    margin: 0 0 12px 0;
+}
+.dashboard-actions {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+}
+.dashboard-actions button {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.dashboard-actions button:first-child {
+    background: #4f8cff;
+    color: #fff;
+}
+.dashboard-actions button:last-child {
+    background: #f59e42;
+    color: #fff;
+}
+.events-section {
+    background: #fafafa;
+    border-radius: 4px;
+    padding: 10px;
+}
+.events-section h2 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+.events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.events-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.events-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+.events-list span {
+    display: block;
+    font-size: 0.95rem;
+}
+img.imageCard {
+    width: 100px;
+    height: 75px;
+    border-radius: 4px;
+}
+#createEventBtn {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#eventFormModal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center;
+}
+#eventFormModal[style*="display: flex"] {
+    display: flex !important;
+}
+#eventForm {
+    background: #fff;
+    padding: 14px;
+    border-radius: 4px;
+    min-width: 200px;
+}
+#eventForm h3 {
+    margin: 0 0 8px 0;
+    color: #2563eb;
+    font-size: 1rem;
+}
+#eventForm label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+#eventForm input, #eventForm textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    background: #fafafa;
+}
+#eventForm button[type="submit"] {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+#closeModal {
+    background: #e5e7eb;
+    color: #222;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+

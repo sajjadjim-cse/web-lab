@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Manegment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <span>EventManager</span>
+        <button>Login</button>
+    </nav>
+    <div class="dashboard-container">
+        <h1>Event Management Dashboard</h1>
+        <p>Easily manage your events, attendees, and schedules in one place.</p>
+        <div class="events-section">
+            <h2>Upcoming Events</h2>
+            <ul class="events-list">
+                <li>
+                    <img class="imageCard"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUQPLNM3vegFIW1gvDfbe8QcFjYbDeq0zZH1yxEnB0a0bGPuemQoG27uNN3CNEJe_LcE&usqp=CAU"
+                        alt="Tech Conference">
+                    <span>Tech Conference 2024</span>
+                    <span>June 20, 2024</span>
+                    <span>Join industry leaders and tech enthusiasts for a day of insightful talks, networking, and
+                        innovation.</span>
+                </li>
+                <li>
+                    <img class="imageCard"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs75UfG67mufkEDI6eIIt8bpL52Kls7IODvg&s"
+                        alt="Art Expo">
+                    <span>Art Expo 2024</span>
+                    <span>July 5, 2024</span>
+                    <span>Experience creativity at its best with exhibitions from renowned and emerging artists.</span>
+                </li>
+                <li>
+                    <img class="imageCard" src="https://ecell.iitm.ac.in/images/meetup/meetup-bangalore.jpeg"
+                        alt="Startup Meetup">
+                    <span>Startup Meetup</span>
+                    <span>August 12, 2024</span>
+                    <span>Connect with founders, investors, and mentors to accelerate your startup journey.</span>
+                </li>
+            </ul>
+        </div>
+                <div class="dashboard-actions">
+            <button id="createEventBtn">Create Event</button>
+
+            <div id="eventFormModal">
+                <form id="eventForm">
+                    <h3>Add New Event</h3>
+                    <label>
+                        Name:
+                        <input type="text" id="eventName" required>
+                        <p id="nameError" style="color:red; display:none;">Name is too short</p>
+                    </label>
+                    <label>
+                        Image URL:
+                        <input type="url" id="eventImage" required>
+                    </label>
+                    <label>
+                        Date:
+                        <input type="date" id="eventDate" required>
+                        <p id="dateError">Date is required</p>
+                    </label>
+                    <label>
+                        Description:
+                        <textarea id="eventDesc" required></textarea>
+                        <p id="descError">Description is required</p>
+                    </label>
+                    <button type="submit">Add</button>
+                    <button type="button" id="closeModal">Cancel</button>
+                </form>
+            </div>
+            <button>View Events</button>
+        </div>
+    </div>
+    
+    <footer style="background: #222; color: #fff; padding: 24px 0; text-align: center; margin-top: 40px;">
+        <p style="margin: 0 0 8px 0;">&copy; 2024 EventManager. All rights reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
